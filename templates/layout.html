@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        
+        <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#">
+                <img src="{{ url_for('static', filename='bird-flying (1).svg') }}" alt="logo" width="30" height="24">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/education">Academic education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experience">Work experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/more">more!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown" style="margin-right: 8%;">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            Contact
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2" >
+            <li><p><a href="tel:+213780416469" style="color: white;">phone : +2137804164691</a></p></li>
+            <li><a href = "mailto:lotfi.kafi@hotmail.com" style="color: white;">Send Email : lotfi.kafi@hotmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+      {% block main %}{% endblock %}
+   
+    </div>
+    <div class="footer"> 
+      <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <a class="navbar-brand" href="#">
+        <img src="{{ url_for('static', filename='bird-flying (1).svg') }}"alt="logo" width="30" height="24">
+      </a>
+      <p class="small">
+        What you are seeing is my <br><span class="illu">self.made</span> personel blog 
+    </p></div>
+    
+</body>
+
+
+</html>
