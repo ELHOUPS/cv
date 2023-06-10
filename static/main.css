@@ -5,11 +5,14 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(to bottom right,#696969 , rgb(247, 247, 247));
+
 }
 
-code {
+.illu {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
+    color: yellow;
 }
 
 .App {
@@ -19,10 +22,12 @@ code {
 .App-logo {
     height: 40vmin;
     pointer-events: none;
+    border-radius: 2em;
 }
 
 .App-header {
-    background-color: #282c34;
+
+    background-image: linear-gradient(to bottom right,#696969 , rgb(247, 247, 247));
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,10 +41,19 @@ code {
     color: #61dafb;
 }
 
-.heart {
-    color: #ff0000;
-}
 
 .small {
-    font-size: 0.75rem;
+    font-size: 0.4rem;
 }
+.importante{
+    font-weight: bold;
+    
+}
+.footer{
+    background-color: rgb(134, 134, 134);
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    border:solid 2px #ffffff ;
+}
+

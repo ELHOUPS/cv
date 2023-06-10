@@ -1,19 +1,18 @@
-<head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
-
-<body>
+{% extends "layout.html" %}
+{% block title %}
+    Home
+{% endblock %}
+      {% block main %}
     <div class="App">
         <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
+            <img src="{{ url_for('static', filename='photo1.jpg') }}" class="App-logo" alt="logo" style="box-shadow: 3px 3px 3px 2px rgb(102, 102, 102);"/>
+            <br>
+            <h5>
+                My name is <br><span class="illu">KAFI LOTFI</span><br> i'm Born in <span class="importante">ALGERIA</span>
+                <br> on 25 september 1993 <br>
+            </h5>
+           
         </header>
-    </div>
-</body>
-
-</html>
+   {% endblock %}     
+        
+    
