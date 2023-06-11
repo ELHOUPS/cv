@@ -33,6 +33,29 @@
   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2" >
     <li><p><a href="tel:+213780416469" style="color: white;">phone : +2137804164691</a></p></li>
     <li><a href = "mailto:lotfi.kafi@hotmail.com" style="color: white;">Send Email : lotfi.kafi@hotmail.com</a></li>
+    <li></li>
   </ul>
 </div><br><br>
+<h3  style="text-align: center; color: white;">Adress </h3>
+<div id="map" style="padding: 5%;"></div><br>
+<script>
+  function initMap() {
+  // The location of Uluru
+  let Beb = { lat: 36.791357, lng: 3.240634 };
+  // The map, centered at Uluru
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 13,
+    center: Beb,
+  });
+  // The marker, positioned at Uluru
+  let marker = new google.maps.Marker({
+    position: Beb,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBknI7wDkERiIMb5_c8hl5rhWYpoDCGmY&callback=initMap"></script>
 {% endblock %}
